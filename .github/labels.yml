@@ -37,7 +37,6 @@
   color: ffffff
 
 # Labels specific to this repo
-
 - name: workflow
   description: github workflow
   color: 6B0448
