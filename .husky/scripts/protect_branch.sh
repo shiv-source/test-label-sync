@@ -21,6 +21,6 @@ done
 
 if [[ $is_protected_branch == "false" ]]; then
     echo ""
-    echo "🎊🎈 Congratulations you are on the right track. your current branch $current_branch is not proected 🎊🎈👏"
+    echo "🎊🎈 Congratulations you are on the right track. Your current branch $current_branch is not a protected branch 🎊🎈👏"
     echo ""
 fi
