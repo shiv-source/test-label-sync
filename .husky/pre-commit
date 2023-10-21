@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-. "$(dirname -- "$0")/scripts/branch_name.sh"
+. "$(dirname -- "$0")/scripts/valid_branch.sh"
 
 . "$(dirname -- "$0")/scripts/protect_branch.sh"
 
