@@ -1,5 +1,8 @@
 # Default GitHub labels
 
+- name: bug
+  description: Something isn't working
+  color: d73a4a
 
 - name: documentation
   description: Improvements or additions to documentation
@@ -35,3 +38,10 @@
 
 # Labels specific to this repo
 
+- name: workflow
+  description: github workflow
+  color: 6B0448
+
+- name: dev-impact
+  description: The impact development workflows
+  color: D93F0B
