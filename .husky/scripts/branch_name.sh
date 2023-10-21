@@ -22,12 +22,12 @@ done
 
 if [[ $is_passed == "false" ]]; then
     echo ""
-    echo "❌ You current branch $current_branch is an invalid branche. ❌"
+    echo "❌ You current branch 😡 $current_branch is an invalid branch. ❌"
     echo ""
-    echo "💁 Suggestions: Branch name should be like "$branch"some_text"
+    echo "💁 Suggestions: Branch name should be like 😡 "$branch"/some_text"
     echo ""
     for val in "${valid_branches[@]}"; do
-        echo "  ➡️  The branch can be start only with $val and should be like this "$val"some_text "
+        echo "  ➡️  The branch can be start only with $val and it should be like "$val"/some_text 🔥"
         echo ""
     done
     echo ""

@@ -13,7 +13,7 @@ for val in "${protected_branches[@]}";do
    if [[ "$current_branch" == "$val" ]]; then
         is_protected_branch=true
         echo ""
-        echo "❌ You can't commit directly to $val branch. ❌"
+        echo "❌ You can't commit directly to 😡 $val branch. ❌"
         echo ""
         exit 1
     fi
