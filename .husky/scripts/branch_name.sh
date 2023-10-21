@@ -20,11 +20,39 @@ current_branch="$(git rev-parse --abbrev-ref HEAD)"
 # fi
 
 
+# valid_branches=("feature/" "bugfix/" "hotfix/")
+
+# for branch in "${valid_branches[@]}"; do
+#     echo $branch 
+#     echo $current_branch
+#   if [[ $current_branch =~ ^$branch$ ]]; then
+#     echo ""
+#     echo "✅ The branch starts with $branch is a valid branch ✅"
+#     echo ""
+#   else
+#     echo ""
+#     echo "❌ You current branch $current_branch is an invalid branche. ❌"
+#     echo ""
+#     echo "💁 Suggestions: Branch name should be like "$branch"some_text"
+#     echo ""
+
+#     for val in "${valid_branches[@]}"; do
+#         echo "  ➡️  The branch can be start only with $val and should be like this "$val"some_text "
+#         echo ""
+#     done
+#     echo ""
+#     echo ""
+#     exit 1
+#   fi
+# done
+
+
+
 valid_branches=("feature/" "bugfix/" "hotfix/")
 
 for branch in "${valid_branches[@]}"; do
-  if [[ $current_branch =~ ^$branch$ ]]; then
-    echo "✅ The branch starts with $branch is a valid branch ✅"
+  if [[ $branch =~ ^$branch$ ]]; then
+    echo "The branch starts with $branch is a valid branch"
     break
   fi
 done
