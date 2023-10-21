@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
+PROTECTED_BRANCHES=('master' 'dev')  #Add more branches here to prevent direct commits.
+
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
-BRANCHES=('master' 'dev')
-
-for val in "${BRANCHES[@]}"
+for val in "${PROTECTED_BRANCHES[@]}"
 do
    if [ "$branch" = "$val" ]; then
         echo "You can't commit directly to $val branch"
