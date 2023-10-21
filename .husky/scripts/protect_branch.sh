@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-PROTECTED_BRANCHES=('master' 'dev')  #Add more branches
+PROTECTED_BRANCHES=('master' 'dev')  #Add more branches here to prevent direct commits.
 
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
