@@ -1,6 +1,7 @@
 const sodium = require('libsodium-wrappers')
 
 const secret = 'YOUR_SECRET'
+
 const key = 'YOUR_BASE64_KEY'
 
 //Check if libsodium is ready and then proceed.
