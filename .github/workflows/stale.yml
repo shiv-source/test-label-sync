@@ -1,7 +1,7 @@
 name: "Close stale issues and PRs"
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "1 * * * *"
 
 jobs:
   stale:
@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/stale@v8
         with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           stale-issue-message: This issue  has been open for  ${{ env.DAYS_BEFORE_ISSUE_STALE}} days with no activity. Add a comment or remove the Stale label to keep open, otherwise it will be close automatically in ${{ env.DAYS_BEFORE_ISSUE_CLOSE}} days.
           stale-pr-message: This PR has been open for  ${{ env.DAYS_BEFORE_PR_STALE}} days with no activity. Add a comment or remove the Stale label to keep open, otherwise it will be close automatically in ${{ env.DAYS_BEFORE_PR_CLOSE}} days.
           close-issue-message: This issue was closed because it has been stalled for ${{ env.DAYS_BEFORE_ISSUE_CLOSE}} days with no activity.
