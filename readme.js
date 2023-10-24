@@ -16,14 +16,6 @@ sodium.ready.then(() => {
 
   // Convert the encrypted Uint8Array to Base64
   let output = sodium.to_base64(encBytes, sodium.base64_variants.ORIGINAL)
- console.log(output)
-   console.log(output)
-   console.log(output)
-   console.log(output)
-   console.log(output)
-   console.log(output)
-   console.log(output)
-  console.log(output)
   // Print the output
   console.log(output)
 });
